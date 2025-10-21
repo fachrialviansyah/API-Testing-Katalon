@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome9",
+    "definitions": {
+        "Welcome9": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/Data"
+                },
+                "support": {
+                    "$ref": "#/definitions/Support"
+                },
+                "_meta": {
+                    "$ref": "#/definitions/Meta"
+                }
+            },
+            "required": [
+                "_meta",
+                "data",
+                "support"
+            ],
+            "title": "Welcome9"
+        },
+        "Meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "powered_by": {
+                    "type": "string"
+                },
+                "upgrade_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "docs_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "template_gallery": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "message": {
+                    "type": "string"
+                },
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "upgrade_cta": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "docs_url",
+                "features",
+                "message",
+                "powered_by",
+                "template_gallery",
+                "upgrade_cta",
+                "upgrade_url"
+            ],
+            "title": "Meta"
+        },
+        "Data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "avatar": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                }
+            },
+            "required": [
+                "avatar",
+                "email",
+                "first_name",
+                "id",
+                "last_name"
+            ],
+            "title": "Data"
+        },
+        "Support": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "text": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "text",
+                "url"
+            ],
+            "title": "Support"
+        }
+    }
+}
