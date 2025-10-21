@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify CRUD user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>119f9271-81b4-4f99-b40b-6d708d6bb8a9</testCaseGuid>
+</TestCaseEntity>
